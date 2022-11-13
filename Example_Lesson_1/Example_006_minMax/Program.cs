@@ -2,10 +2,10 @@
 //Console.SetCursorPosition(1, 1);
 //Console.WriteLine("+");
 
-int a = new Random().Next(1,60),
-    b = new Random().Next(1,60),
-    c = new Random().Next(1,60),
-    d = new Random().Next(1,60),
+int a = new Random().Next(-60,60),
+    b = new Random().Next(-60,60),
+    c = new Random().Next(-60,60),
+    d = new Random().Next(-60,60),
     max;
 
 int x = 0;
@@ -25,7 +25,6 @@ while (x<10)
 
 max = a;
 
-if (a > max) max = a;
 if (b > max) max = b;
 if (c > max) max = c;
 if (d > max) max = d;
