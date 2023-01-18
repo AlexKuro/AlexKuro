@@ -19,12 +19,14 @@ class Program
     int[] sortArray_2 = new int[size];
     int[] sortArray_3 = new int[size];
     int[] sortArray_4 = new int[size];
+    int[] sortArray_5 = new int[size];
 
     FillArray(array);
     CopyArray(array, sortArray_1);
     CopyArray(array, sortArray_2);
     CopyArray(array, sortArray_3);
     CopyArray(array, sortArray_4);
+    CopyArray(array, sortArray_5);
 
     Console.WriteLine();
     Console.WriteLine("Способ I ---- Сортировка методом выбора");
@@ -65,6 +67,17 @@ class Program
     Show(sortArray_4, ", ");
     sw4.Stop();
     Console.WriteLine($" time IV --- Быстрая сортировка = {sw4.ElapsedMilliseconds} ms");
-   
+
+
+    Console.WriteLine();
+    Console.WriteLine("Способ V --- Быстрая сортировка");
+    Stopwatch sw5 = new();
+    sw4.Start();
+    Show(array, ", ");
+    SortCounting(sortArray_5);
+    Show(sortArray_5, ", ");
+    sw5.Stop();
+    Console.WriteLine($" time V --- Быстрая сортировка = {sw4.ElapsedMilliseconds} ms");
+
   }
 }
